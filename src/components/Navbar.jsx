@@ -3,6 +3,7 @@ import { motion, AnimatePresence, useScroll } from 'framer-motion';
 import { FiMenu, FiX, FiSun, FiMoon, FiShoppingBag } from 'react-icons/fi';
 import { useScrollProgress } from '../hooks/useScrollProgress';
 import { navbarVariants, drawerVariants, overlayVariants, fadeDown, staggerContainer } from '../animations/variants';
+import logo from '../assets/images/logo.png';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -58,12 +59,11 @@ export default function Navbar({ darkMode, setDarkMode }) {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <span className="font-display text-xl md:text-2xl font-bold text-forest tracking-wide dark:text-cream-200">
-                RAAS RATNA
-              </span>
-              <span className="text-[9px] font-semibold tracking-[0.3em] uppercase text-honey dark:text-honey-300">
-                Pure Nature. Pure Skin.
-              </span>
+              <img
+                src={logo}
+                alt="RAAS RATNA"
+                className="h-10 md:h-12 w-auto object-contain drop-shadow-sm"
+              />
             </motion.a>
 
             {/* Desktop Links */}
@@ -169,10 +169,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
             >
               {/* Drawer Header */}
               <div className="flex items-center justify-between p-6 border-b border-honey/20">
-                <div>
-                  <p className="font-display text-lg font-bold text-forest dark:text-cream-200">RAAS RATNA</p>
-                  <p className="text-[9px] tracking-[0.25em] uppercase text-honey">Pure Nature. Pure Skin.</p>
-                </div>
+                <img src={logo} alt="RAAS RATNA" className="h-10 w-auto object-contain" />
                 <motion.button
                   onClick={() => setDrawerOpen(false)}
                   whileTap={{ scale: 0.9 }}

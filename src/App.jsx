@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import { useScrollProgress } from './hooks/useScrollProgress';
 import { useMouseGlow } from './hooks/useMouseGlow';
+import logo from './assets/images/logo.png';
 import './index.css';
 
 // Loading Screen Component
@@ -47,27 +48,23 @@ function LoadingScreen({ onComplete }) {
         transition={{ duration: 0.8, ease: [0.34, 1.56, 0.64, 1] }}
       >
         <motion.div
-          className="flex items-center justify-center gap-3 mb-3"
-          animate={{ y: [0, -5, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+          className="flex items-center justify-center mb-4"
+          animate={{ y: [0, -6, 0] }}
+          transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
         >
-          <GiLeafSwirl size={40} className="text-honey" />
+          <img
+            src={logo}
+            alt="RAAS RATNA"
+            className="w-36 h-36 object-contain drop-shadow-2xl"
+          />
         </motion.div>
-        <motion.p
-          className="font-display text-4xl font-bold text-cream-100 tracking-wider mb-1"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-        >
-          RAAS RATNA
-        </motion.p>
         <motion.p
           className="text-xs tracking-[0.4em] uppercase text-honey font-semibold"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
         >
-          Pure Nature. Pure Skin.
+          Luxury Born from Nature
         </motion.p>
       </motion.div>
 

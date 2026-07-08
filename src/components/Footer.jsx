@@ -3,6 +3,7 @@ import { FiInstagram, FiFacebook, FiYoutube, FiMail, FiPhone } from 'react-icons
 import { FaWhatsapp } from 'react-icons/fa';
 import { GiLeafSwirl } from 'react-icons/gi';
 import { fadeUp, staggerContainer } from '../animations/variants';
+import logo from '../assets/images/logo.png';
 
 const footerLinks = {
   'Quick Links': [
@@ -63,16 +64,16 @@ export default function Footer() {
               transition={{ duration: 0.6 }}
             >
               {/* Logo */}
-              <div className="flex items-center gap-2 mb-4">
-                <GiLeafSwirl className="text-honey" size={28} />
-                <div>
-                  <p className="font-display text-2xl font-bold text-cream-100">RAAS RATNA</p>
-                  <p className="text-[9px] tracking-[0.3em] uppercase text-honey font-semibold">Pure Nature. Pure Skin.</p>
-                </div>
+              <div className="mb-5">
+                <img
+                  src={logo}
+                  alt="RAAS RATNA"
+                  className="w-28 h-28 object-contain"
+                />
               </div>
 
               <p className="text-sm text-cream-300/60 leading-relaxed mb-6 max-w-sm">
-                Handcrafted Ayurvedic soaps rooted in ancient herbal wisdom. Bringing you the best of nature — pure, clean, and full of love.
+                <span className="text-honey font-semibold">Luxury Born from Nature.</span> Handcrafted Ayurvedic soaps rooted in ancient herbal wisdom — pure, clean, and full of love.
               </p>
 
               {/* Social Links */}
