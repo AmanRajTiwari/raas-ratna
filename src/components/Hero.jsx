@@ -11,8 +11,8 @@ import {
   leafAnimation,
 } from '../animations/variants';
 import heroBg from '../assets/images/hero_bg.png';
-import soapOrange from '../assets/images/soap_orange.png';
-import soapNeem from '../assets/images/soap_neem.png';
+import soapOrange from '../assets/images/p_orange.png';
+import soapNeem from '../assets/images/p_neem.png';
 
 // Floating leaf SVG component
 const Leaf = ({ size = 24, color = '#2D5016', opacity = 0.6 }) => (
