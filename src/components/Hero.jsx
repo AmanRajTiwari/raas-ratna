@@ -132,9 +132,9 @@ export default function Hero() {
           {/* Tag */}
           <motion.div variants={fadeUp} className="flex items-center gap-2 mb-6">
             <span className="w-8 h-0.5 bg-honey rounded-full" />
-            <span className="text-xs font-semibold tracking-[0.3em] uppercase text-forest dark:text-honey">
+            {/* <span className="text-xs font-semibold tracking-[0.3em] uppercase text-forest dark:text-honey">
               Luxury Born from Nature
-            </span>
+            </span> */}
           </motion.div>
 
           {/* Main Heading */}
