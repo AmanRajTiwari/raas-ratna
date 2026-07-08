@@ -178,24 +178,24 @@ export default function Contact() {
               {
                 icon: <FiPhone size={20} />,
                 title: 'Call / WhatsApp',
-                value: '+91 98765 43210',
-                href: 'tel:+919876543210',
+                value: '+91 92436 91417',
+                href: 'tel:+919243691417',
                 bg: 'bg-forest/10',
                 color: 'text-forest dark:text-honey',
               },
               {
                 icon: <FiMail size={20} />,
                 title: 'Email Us',
-                value: 'hello@raasratna.in',
-                href: 'mailto:hello@raasratna.in',
+                value: 'sukolenterprises@gmail.com',
+                href: 'mailto:sukolenterprises@gmail.com',
                 bg: 'bg-honey/15',
                 color: 'text-honey-dark dark:text-honey',
               },
               {
                 icon: <FiMapPin size={20} />,
                 title: 'Our Location',
-                value: 'Rajasthan, India 🇮🇳',
-                href: null,
+                value: 'C-2, Sant Jalaram Bapu Nagar, Mandla Road, Tilhari, Jabalpur, MP, 482020',
+                href: 'https://maps.google.com/?q=C-2%2C+Sant+Jalaram+Bapu+Nagar%2C+Mandla+Road%2C+Tilhari%2C+Jabalpur%2C+Madhya+Pradesh+482020',
                 bg: 'bg-orange-peel/10',
                 color: 'text-orange-peel',
               },
@@ -213,7 +213,7 @@ export default function Contact() {
                     {info.title}
                   </p>
                   {info.href ? (
-                    <a href={info.href} className={`text-sm font-semibold ${info.color} hover:underline`}>
+                    <a href={info.href} target={info.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer" className={`text-sm font-semibold ${info.color} hover:underline`}>
                       {info.value}
                     </a>
                   ) : (
@@ -227,7 +227,7 @@ export default function Contact() {
             <div className="rounded-3xl overflow-hidden border border-forest/15 dark:border-white/10 shadow-glass h-64">
               <iframe
                 title="Raas Ratna Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.5!2d75.7873!3d26.9124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5ff2ade4437%3A0x44d9a4!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1"
+                src="https://maps.google.com/maps?q=C-2%2C%20Sant%20Jalaram%20Bapu%20Nagar%2C%20Mandla%20Road%2C%20Tilhari%2C%20Jabalpur%2C%20Madhya%20Pradesh%20482020&t=&z=14&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

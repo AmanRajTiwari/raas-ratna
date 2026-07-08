@@ -30,7 +30,7 @@ const footerLinks = {
 const socials = [
   { Icon: FiInstagram, href: 'https://instagram.com', label: 'Instagram', color: 'hover:text-pink-500' },
   { Icon: FiFacebook, href: 'https://facebook.com', label: 'Facebook', color: 'hover:text-blue-500' },
-  { Icon: FaWhatsapp, href: 'https://wa.me/919876543210', label: 'WhatsApp', color: 'hover:text-green-400' },
+  { Icon: FaWhatsapp, href: 'https://wa.me/919243691417', label: 'WhatsApp', color: 'hover:text-green-400' },
   { Icon: FiYoutube, href: 'https://youtube.com', label: 'YouTube', color: 'hover:text-red-500' },
 ];
 

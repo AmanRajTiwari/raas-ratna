@@ -14,7 +14,7 @@ export default function ProductCard({ product }) {
     const msg = encodeURIComponent(
       `Hello! I'm interested in ordering *${name}* from RAAS RATNA. Please share details. 🌿`
     );
-    window.open(`https://wa.me/919876543210?text=${msg}`, '_blank');
+    window.open(`https://wa.me/919243691417?text=${msg}`, '_blank');
   };
 
   const handleOrder = () => {

@@ -154,7 +154,7 @@ export default function FAQ() {
             We&apos;re here to help. Reach us on WhatsApp for instant answers.
           </p>
           <a
-            href="https://wa.me/919876543210"
+            href="https://wa.me/919243691417"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary px-6 py-2.5 text-sm inline-flex"

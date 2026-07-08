@@ -220,7 +220,7 @@ export default function Products() {
             Free shipping on orders above ₹499 &nbsp;·&nbsp; COD Available &nbsp;·&nbsp; 100% Natural
           </p>
           <motion.a
-            href={`https://wa.me/919876543210?text=${encodeURIComponent('Hello! I want to see the full RAAS RATNA product catalogue. 🌿')}`}
+            href={`https://wa.me/919243691417?text=${encodeURIComponent('Hello! I want to see the full RAAS RATNA product catalogue. 🌿')}`}
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.04, y: -2 }}
