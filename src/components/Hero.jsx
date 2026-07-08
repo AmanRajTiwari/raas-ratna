@@ -142,12 +142,11 @@ export default function Hero() {
             variants={fadeUp}
             className="font-display text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-forest dark:text-cream-100 mb-6"
           >
-            Pure
-            <span className="italic text-gradient-gold"> Nature.</span>
+            Luxury
             <br />
-            Pure{' '}
+            <span className="italic text-gradient-gold">Born from </span>
             <span className="relative inline-block">
-              Skin.
+              Nature.
               <motion.span
                 className="absolute -bottom-1 left-0 right-0 h-1 bg-honey/60 rounded-full"
                 initial={{ scaleX: 0 }}
