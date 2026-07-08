@@ -163,12 +163,12 @@ export default function Gallery() {
           className="mt-14 text-center"
         >
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/raas_ratna?igsh=anZpN3loZXVvY2N6"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold text-forest dark:text-honey hover:underline transition-colors"
           >
-            Follow us on Instagram @raasratna →
+            Follow us on Instagram @raas_ratna →
           </a>
         </motion.div>
       </div>
