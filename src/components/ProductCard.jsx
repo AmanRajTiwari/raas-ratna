@@ -61,36 +61,23 @@ export default function ProductCard({ product }) {
       {/* Image Area */}
       <div
         className="relative overflow-hidden"
-        style={{
-          background: `linear-gradient(135deg, ${theme.gradientFrom}, ${theme.gradientFrom}88)`,
-          height: '240px',
-        }}
+        style={{ height: '280px' }}
       >
-        {/* Decorative blobs */}
-        <div
-          className="absolute -top-8 -right-8 w-36 h-36 rounded-full blur-3xl opacity-30"
-          style={{ background: theme.primary }}
-        />
-        <div
-          className="absolute -bottom-8 -left-8 w-28 h-28 rounded-full blur-3xl opacity-20"
-          style={{ background: theme.primary }}
-        />
-
-        {/* Product Image */}
+        {/* Product Image — studio photo with natural background */}
         <motion.img
           src={image}
           alt={name}
-          className="w-full h-full object-contain relative z-10 py-4 px-6"
-          animate={{ scale: hovered ? 1.08 : 1, y: hovered ? -6 : 0 }}
-          transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+          className="w-full h-full object-cover"
+          animate={{ scale: hovered ? 1.07 : 1, y: hovered ? -4 : 0 }}
+          transition={{ duration: 0.55, ease: [0.25, 0.46, 0.45, 0.94] }}
           loading="lazy"
         />
 
-        {/* Bottom fade */}
+        {/* Gradient fade at bottom for smooth content blend */}
         <div
-          className="absolute bottom-0 left-0 right-0 h-12"
+          className="absolute bottom-0 left-0 right-0 h-16"
           style={{
-            background: `linear-gradient(to top, ${theme.gradientFrom}, transparent)`,
+            background: `linear-gradient(to top, ${theme.gradientFrom} 0%, transparent 100%)`,
           }}
         />
       </div>
