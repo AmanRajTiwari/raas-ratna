@@ -2,24 +2,12 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { staggerContainer, fadeUp, scaleIn } from '../animations/variants';
 import { FiX, FiZoomIn } from 'react-icons/fi';
-import gallery1 from '../assets/images/gallery1.png';
-import gallery2 from '../assets/images/gallery2.png';
-import gallery3 from '../assets/images/gallery3.png';
-import gallery4 from '../assets/images/gallery4.png';
 import pOrange   from '../assets/images/p_orange.png';
 import pNeem     from '../assets/images/p_neem.png';
 import pCharcoal from '../assets/images/p_charcoal.png';
 import pHaldi    from '../assets/images/p_haldi.png';
 import pUbtan    from '../assets/images/p_ubtan.png';
 import pMedicated from '../assets/images/p_medicated.png';
-
-// Lifestyle / ambient gallery photos (full bleed, cover)
-const ambientImages = [
-  { src: gallery1, alt: 'RAAS RATNA Collection', caption: 'Artisan Collection' },
-  { src: gallery2, alt: 'Pure Natural Ingredients', caption: 'Pure Ingredients' },
-  { src: gallery3, alt: 'Crafted with Love', caption: 'Crafted with Love' },
-  { src: gallery4, alt: 'Luxury Born from Nature', caption: 'Luxury Born from Nature' },
-];
 
 // Product showcase cards (contained, themed background)
 const productShowcase = [
@@ -118,41 +106,6 @@ export default function Gallery() {
           ))}
         </motion.div>
 
-        {/* ── PART 2: Ambient Photo Grid ── */}
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.05 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4"
-        >
-          {ambientImages.map((img, i) => (
-            <motion.div
-              key={i}
-              variants={scaleIn}
-              custom={i}
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.35 }}
-              onClick={() => setLightbox(img)}
-              className="group relative overflow-hidden rounded-2xl cursor-pointer"
-              style={{ aspectRatio: i % 2 === 0 ? '3/4' : '4/3' }}
-            >
-              <img
-                src={img.src}
-                alt={img.alt}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                loading="lazy"
-              />
-              {/* Hover overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-forest-dark/70 via-forest/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-4">
-                <div className="transform translate-y-3 group-hover:translate-y-0 transition-transform duration-400">
-                  <p className="text-cream-100 text-sm font-semibold">{img.caption}</p>
-                  <p className="text-honey text-xs font-medium tracking-wider uppercase mt-0.5">Raas Ratna</p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
 
         {/* ── Instagram CTA ── */}
         <motion.div
