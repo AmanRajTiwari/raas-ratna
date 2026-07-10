@@ -132,10 +132,10 @@ export default function ProductCard({ product }) {
               Price
             </p>
             <p
-              className="text-2xl font-bold font-display"
+              className="text-xl font-bold font-display"
               style={{ color: theme.primary }}
             >
-              ₹249
+              On Request
             </p>
           </div>
           <div

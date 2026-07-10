@@ -186,8 +186,8 @@ export default function Contact() {
               {
                 icon: <FiMail size={20} />,
                 title: 'Email Us',
-                value: 'sukolenterprises@gmail.com',
-                href: 'mailto:sukolenterprises@gmail.com',
+                value: 'sukoleenterprises@gmail.com',
+                href: 'mailto:sukoleenterprises@gmail.com',
                 bg: 'bg-honey/15',
                 color: 'text-honey-dark dark:text-honey',
               },
