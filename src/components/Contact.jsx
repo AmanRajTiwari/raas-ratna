@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { FiSend, FiUser, FiPhone, FiMail, FiMessageSquare, FiMapPin } from 'react-icons/fi';
+import { FiSend, FiUser, FiPhone, FiMail, FiMessageSquare, FiMapPin, FiHash, FiGlobe } from 'react-icons/fi';
 import { staggerContainer, fadeUp, fadeLeft, fadeRight } from '../animations/variants';
 import toast from 'react-hot-toast';
 
@@ -11,6 +11,8 @@ export default function Contact() {
     name: '',
     phone: '',
     email: '',
+    orderQuantity: '',
+    country: '',
     message: '',
   });
 
@@ -35,7 +37,7 @@ export default function Contact() {
       style: { background: '#2D5016', color: '#FAF7F0', borderRadius: '12px' },
       iconTheme: { primary: '#D4A017', secondary: '#FAF7F0' },
     });
-    setFormData({ name: '', phone: '', email: '', message: '' });
+    setFormData({ name: '', phone: '', email: '', orderQuantity: '', country: '', message: '' });
     formRef.current?.reset();
   };
 
@@ -121,6 +123,35 @@ export default function Contact() {
                   className={`${inputClass} pl-11`}
                   required
                 />
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="relative">
+                  <FiHash className="absolute left-4 top-1/2 -translate-y-1/2 text-forest/40 dark:text-honey/40" size={16} />
+                  <input
+                    type="number"
+                    name="orderQuantity"
+                    id="contact-quantity"
+                    placeholder="Order Quantity"
+                    value={formData.orderQuantity}
+                    onChange={handleChange}
+                    className={`${inputClass} pl-11`}
+                    min="1"
+                  />
+                </div>
+
+                <div className="relative">
+                  <FiGlobe className="absolute left-4 top-1/2 -translate-y-1/2 text-forest/40 dark:text-honey/40" size={16} />
+                  <input
+                    type="text"
+                    name="country"
+                    id="contact-country"
+                    placeholder="Country"
+                    value={formData.country}
+                    onChange={handleChange}
+                    className={`${inputClass} pl-11`}
+                  />
+                </div>
               </div>
 
               <div className="relative">
