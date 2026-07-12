@@ -136,17 +136,17 @@ export default function Footer() {
             <p className="font-display text-lg font-semibold text-cream-200">Get exclusive offers & skincare tips</p>
             <p className="text-xs text-cream-300/50 mt-0.5">Join 5,000+ subscribers. No spam, just nature.</p>
           </div>
-          <div className="flex gap-2 w-full md:w-auto">
+          <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
             <input
               type="email"
               id="newsletter-email"
               placeholder="Your email address"
-              className="flex-1 md:w-60 px-4 py-2.5 rounded-full bg-white/10 border border-white/15 text-sm text-cream-200 placeholder-cream-300/40 focus:outline-none focus:border-honey/50"
+              className="w-full sm:flex-1 md:w-60 px-4 py-2.5 rounded-full bg-white/10 border border-white/15 text-sm text-cream-200 placeholder-cream-300/40 focus:outline-none focus:border-honey/50"
             />
             <motion.button
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
-              className="px-5 py-2.5 rounded-full bg-honey text-charcoal-dark font-semibold text-sm hover:bg-honey-dark transition-colors"
+              className="w-full sm:w-auto px-6 py-2.5 rounded-full bg-honey text-charcoal-dark font-semibold text-sm hover:bg-honey-dark transition-colors whitespace-nowrap"
             >
               Subscribe
             </motion.button>
